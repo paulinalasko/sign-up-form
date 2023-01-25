@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <section class="container">  
+    <div class="logo shadow">
+        <h1>Ocean Project</h1>
+        <p class="photo-credits">Photo by Ivan Vandura on Unsplash</p>
+    </div>
+        <div class="form-container">
+          <div class="header-text">  
+            <p class="header-text-one">This is definitely not a real online service. But, caring about the environment is still a real thing.</p>
+            <p class="header-text-two">Do you care about our oceans? I'm sure you do! If you're interested in helping the planet and contributing to society,
+            sign up <em>now</em> to get started.</p>
+          </div>
+        <div class="box-shadow-container">
+          <h1 class="form-title">Let's do this!</h1>
+          <form action="" method="post">
+            <div class="form-elements-left">  
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first-name" required>
+                <div class="first-name-error"></div>
+
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="email" placeholder="example@example.com" required>
+
+                <label for="pwd">Password <span class="pwd-rules">(Min. 8 characters, which contains at least one uppercase letter, one lowercase letter, and one number.</span></label>
+                <input type="password" id="pwd" name="password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+            </div>
+            <div class="form-elements-right">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last-name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Ex. 222-222-2244" required>
+
+                <label for="confirm-pwd">Confirm Password</label>
+                <input type="password" id="confirm-pwd" name="confirm-password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Oops, Password do not match." required>
+            </div> 
+        </div>  
+        <div class="submit-button-container">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="" class="link">Log in</a></p>
+      </div>
+    </form> 
+  </div>  
+</section>
+</body>
+</html>
